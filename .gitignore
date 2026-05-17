@@ -1,0 +1,5 @@
+env/
+__pychache__/
+.env
+node_modules/
+dist/
