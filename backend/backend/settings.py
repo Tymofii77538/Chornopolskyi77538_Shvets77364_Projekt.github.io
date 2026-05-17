@@ -116,6 +116,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-CORS_ALLOWED_ORIGINS = [
-    'chornopolskyi77538-shvets77364-github-fvzbbj6ct.vercel.app',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'chornopolskyi77538-shvets77364-github-fvzbbj6ct.vercel.app',
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
