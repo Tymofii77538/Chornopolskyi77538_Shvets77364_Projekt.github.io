@@ -1,6 +1,6 @@
-import { use, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import axios from "../api/axios";
+import Card from "../components/Card";
 
 function BookList() {
     const [books, setBooks] = useState([]);
@@ -19,10 +19,7 @@ function BookList() {
         <div>
             <h1>Book List</h1>
             {books.map((book) => (
-                <div key={book.id}>
-                    <h2><Link to={`/books/${book.id}`}>{book.title}</Link></h2>
-                    <p>Author: {book.author}</p>
-                </div>
+                <Card key={book.id} title={book.title} subtitle={book.author} link={`/books/${book.id}`} />
             ))}
         </div>
     )
