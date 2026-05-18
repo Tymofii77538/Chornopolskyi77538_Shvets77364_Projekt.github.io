@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 
-function Card({ title, author, Link }) {
+function Card({ title, subtitle, link }) {
     return (
         <div className="card">
-            <h2>{title}</h2>
-            <p>by {author}</p>
-            <Link to={link}>View Details</Link>
+            <h2 className="title">{title}</h2>
+            <p className="subtitle">{subtitle}</p>
+            <Link to={link} className="card-link">
+                View Details
+            </Link>
         </div>
     );
 }
