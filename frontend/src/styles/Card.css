@@ -1,2 +1,110 @@
 /*сюди стилі для карточок добавиш
 */
+
+.card-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border 0.2s;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.theme-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+}
+
+
+.theme-red {
+    background-color: #ef9a9a;
+    color: #b71c1c;
+}
+.theme-red .card-container {
+    border: 3px solid #b71c1c;
+}
+.theme-red input, 
+.theme-red textarea {
+    border: 1px solid #b71c1c;
+}
+.theme-red .submit-btn {
+    background: #b71c1c;
+    color: white;
+}
+.theme-red .theme-btn {
+    background: white;
+    color: #b71c1c;
+    border: 2px solid #b71c1c;
+}
+
+
+.theme-green {
+    background-color: #81c784;
+    color: #1b5e20;
+}
+.theme-green .card-container {
+    border: 2px solid #2e7d32;
+    border-radius: 20px;
+    background: #f1f8e9;
+}
+.theme-green input, 
+.theme-green textarea {
+    border: 2px solid #2e7d32;
+    border-radius: 8px;
+}
+.theme-green .submit-btn {
+    background: #2e7d32;
+    color: white;
+    border-radius: 8px;
+}
+.theme-green .theme-btn {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
