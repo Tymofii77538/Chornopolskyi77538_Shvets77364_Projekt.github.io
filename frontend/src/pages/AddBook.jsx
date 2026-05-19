@@ -46,6 +46,7 @@ function AddBook() {
                 <div>
                     <label className="input-label">Description:</label>
                     <textarea
+                        className="input-field"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                     />

@@ -31,48 +31,13 @@
 }
 
 
-.theme-red .card {
-    border: 3px solid #b71c1c;
-}
-
-.theme-red .title {
-    color: #b71c1c;
-}
-
-.theme-red .subtitle {
-    color: #555555;
-}
-
-.theme-red .card-link {
-    background: #b71c1c;
+.card-link {
+    background: #0f60f8;
     color: #ffffff;
+    border-radius: 5px;
 }
 
-.theme-red .card-link:hover {
-    background: #c62828;
-}
-
-
-.theme-green .card {
-    border: 2px solid #2e7d32;
-    border-radius: 16px;
-    background: #f1f8e9;
-}
-
-.theme-green .title {
-    color: #2e7d32;
-}
-
-.theme-green .subtitle {
-    color: #2e7d32;
-}
-
-.theme-green .card-link {
-    background: #2e7d32;
+.card-link:hover {
+    background: #0d56e0;
     color: #ffffff;
-    border-radius: 8px;
-}
-
-.theme-green .card-link:hover {
-    background: #1b5e20;
 }

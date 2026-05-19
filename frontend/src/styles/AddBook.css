@@ -1,10 +1,9 @@
-
 .add-book-container {
     max-width: 500px;
     margin: 40px auto;
     padding: 35px;
     background: #ffffff;
-    box-shadow: 0 6px 22px rgba(0,0,0,0.07);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07);
 }
 
 .form-title {
@@ -21,20 +20,18 @@
     box-sizing: border-box;
 }
 
+.add-book-button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
-.theme-red .add-book-container {
-    border-top: 6px solid #b71c1c;
-}
-.theme-red .input-field {
-    border: 1px solid #b71c1c;
-}
 
-.theme-green .add-book-container {
-    border: 2px solid #2e7d32;
-    border-radius: 20px;
-    background: #f1f8e9;
-}
-.theme-green .input-field {
-    border: 2px solid #2e7d32;
-    border-radius: 8px;
+.add-book-button:hover {
+    background: #45a049;
 }

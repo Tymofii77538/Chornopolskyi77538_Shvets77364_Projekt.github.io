@@ -6,20 +6,9 @@
 
 
 
-.theme-red .book-item {
-    border: 2px solid #b71c1c;
-}
-
-.theme-red .book-title {
-    color: #b71c1c;
-}
-
-.theme-green .book-item {
-    border: 2px solid #2e7d32;
-    border-radius: 12px;
-    background: #f1f8e9;
-}
-
-.theme-green .book-title {
-    color: #2e7d32;
+.book-list-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
 }
