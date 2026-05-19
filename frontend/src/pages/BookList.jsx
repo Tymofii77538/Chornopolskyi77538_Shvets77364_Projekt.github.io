@@ -20,7 +20,7 @@ function BookList() {
         <div className="book-list-container">
             <h1 className="book-list-title">Book List</h1>
             {books.map((book) => (
-                <Card key={book.id} title={book.title} subtitle={book.author} link={`/books/${book.id}`} />
+                <Card key={book.id} title={book.title} subtitle={book.author_name} link={`/books/${book.id}`} />
             ))}
         </div>
     )

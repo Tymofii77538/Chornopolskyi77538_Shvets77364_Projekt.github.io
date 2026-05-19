@@ -1,0 +1,29 @@
+.author-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.author-detail-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.author-detail-biography {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.author-detail-back-link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.author-detail-back-link:hover {
+    text-decoration: underline;
+}

@@ -24,7 +24,7 @@ function BookDetail() {
     return (
         <div className="book-detail-container">
             <h1 className="book-info-title">{book.title}</h1>
-            <p className="book-author">Author: {book.author}</p>
+            <p className="book-author">Author: {book.author_name}</p>
             <p className="book-description">Description: {book.description}</p>
             <Link to="/" className="back-to-book-list">
                 Back to Book List
