@@ -18,6 +18,20 @@
     max-width: 600px;
 }
 
+.author-detail-books-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author-detail-books {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .author-detail-back-link {
     font-size: 16px;
     color: #007bff;
