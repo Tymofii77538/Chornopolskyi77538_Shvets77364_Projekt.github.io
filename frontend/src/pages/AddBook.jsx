@@ -20,29 +20,31 @@ function AddBook() {
     };
 
     return (
-        <div>
-            <h1 className="add-book-title">Add New Book</h1>
+        <div className="add-book-container">
+            <h1 className="form-title">Add New Book</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label className="title">Title:</label>
+                    <label className="input-label">Title:</label>
                     <input
                         type="text"
+                        className="input-field"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         required
                     />
                 </div>
                 <div>
-                    <label className="author">Author:</label>
+                    <label className="input-label">Author:</label>
                     <input
                         type="text"
+                        className="input-field"
                         value={author}
                         onChange={(e) => setAuthor(e.target.value)}
                         required
                     />
                 </div>
                 <div>
-                    <label className="description">Description:</label>
+                    <label className="input-label">Description:</label>
                     <textarea
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}

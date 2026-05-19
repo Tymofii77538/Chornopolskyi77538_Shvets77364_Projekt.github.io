@@ -17,7 +17,7 @@ function BookList() {
     }, [])
 
     return (
-        <div>
+        <div className="book-list-container">
             <h1 className="book-list-title">Book List</h1>
             {books.map((book) => (
                 <Card key={book.id} title={book.title} subtitle={book.author} link={`/books/${book.id}`} />

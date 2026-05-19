@@ -21,11 +21,13 @@ function BookDetail() {
     }
 
     return (
-        <div>
-            <h1 className="book-title">{book.title}</h1>
-            <p className="author">Author: {book.author}</p>
-            <p className="description">Description: {book.description}</p>
-            <Link to="/" className="back-to-book-list">Back to Book List</Link>
+        <div className="book-detail-container">
+            <h1 className="book-info-title">{book.title}</h1>
+            <p className="book-author">Author: {book.author}</p>
+            <p className="book-description">Description: {book.description}</p>
+            <Link to="/" className="back-to-book-list">
+                Back to Book List
+            </Link>
         </div>
     )
 }
