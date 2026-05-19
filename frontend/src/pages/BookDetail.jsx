@@ -22,10 +22,10 @@ function BookDetail() {
 
     return (
         <div>
-            <h1>{book.title}</h1>
-            <p>Author: {book.author}</p>
-            <p>Description: {book.description}</p>
-            <Link to="/">Back to Book List</Link>
+            <h1 className="book-title">{book.title}</h1>
+            <p className="author">Author: {book.author}</p>
+            <p className="description">Description: {book.description}</p>
+            <Link to="/" className="back-to-book-list">Back to Book List</Link>
         </div>
     )
 }

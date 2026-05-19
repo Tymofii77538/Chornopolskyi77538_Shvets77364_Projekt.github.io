@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "../api/axios";
+import "../styles/AddBook.css";
 
 function AddBook() {
     const [title, setTitle] = useState("");
@@ -20,10 +21,10 @@ function AddBook() {
 
     return (
         <div>
-            <h1>Add New Book</h1>
+            <h1 className="add-book-title">Add New Book</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Title:</label>
+                    <label className="title">Title:</label>
                     <input
                         type="text"
                         value={title}
@@ -32,7 +33,7 @@ function AddBook() {
                     />
                 </div>
                 <div>
-                    <label>Author:</label>
+                    <label className="author">Author:</label>
                     <input
                         type="text"
                         value={author}
@@ -41,13 +42,15 @@ function AddBook() {
                     />
                 </div>
                 <div>
-                    <label>Description:</label>
+                    <label className="description">Description:</label>
                     <textarea
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                     />
                 </div>
-                <button type="submit">Add Book</button>
+                <button type="submit" className="add-book-button">
+                    Add Book
+                </button>
             </form>
         </div>
     );
