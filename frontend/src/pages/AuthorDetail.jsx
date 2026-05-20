@@ -18,7 +18,7 @@ function AuthorDetail() {
     }, [id]);
 
     if (!author) {
-        return <div>Author not found</div>;
+        return <div>Loading...</div>;
     }
 
     return (

@@ -24,3 +24,7 @@
     border-radius: 4px;
     transition: background 0.3s ease;
 }
+
+.add-book-link:hover {
+    background: #0056b3;
+}

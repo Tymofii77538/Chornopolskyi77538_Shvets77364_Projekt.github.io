@@ -32,3 +32,19 @@
 .back-to-book-list:hover {
     background: #45a049;
 }
+
+.delete-book-button {
+    margin-right: 15px;
+    padding: 10px 20px;
+    background: #f44336;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-book-button:hover {
+    background: #d32f2f;
+}

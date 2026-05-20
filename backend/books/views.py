@@ -9,7 +9,7 @@ class BookListCreateView(generics.ListCreateAPIView):
     serializer_class = BookSerializer
 
 
-class BookDetailView(generics.RetrieveAPIView):
+class BookDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
@@ -19,6 +19,6 @@ class AuthorListCreateView(generics.ListCreateAPIView):
     serializer_class = AuthorSerializer
 
 
-class AuthorDetailView(generics.RetrieveAPIView):
+class AuthorDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
