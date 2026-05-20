@@ -29,6 +29,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
+    border-radius: 15px;
 }
 
 .add-book-button:hover {
@@ -36,7 +37,8 @@
 }
 
 .add-author-button {
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     padding: 8px 12px;
     background: #007bff;
     color: #ffffff;
@@ -44,6 +46,7 @@
     font-size: 14px;
     cursor: pointer;
     transition: background 0.3s ease;
+    border-radius: 15px;
 }
 
 .add-author-button:hover {
