@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "../api/axios";
 import "../styles/AddBook.css";
+import FormField from "../components/FormField";
 
 function AddBook() {
     const [title, setTitle] = useState("");
@@ -55,16 +56,13 @@ function AddBook() {
         <div className="add-book-container">
             <h1 className="form-title">Add New Book</h1>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label className="input-label">Title:</label>
-                    <input
-                        type="text"
-                        className="input-field"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        required
-                    />
-                </div>
+                <FormField
+                    label="Title"
+                    type="text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    required
+                />
                 <div>
                     <label className="input-label">Author:</label>
                     <select
@@ -98,14 +96,12 @@ function AddBook() {
                         />
                     </div>
                 )}
-                <div>
-                    <label className="input-label">Description:</label>
-                    <textarea
-                        className="input-field"
-                        value={description}
-                        onChange={(e) => setDescription(e.target.value)}
-                    />
-                </div>
+                <FormField
+                    label="Description"
+                    type="textarea"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                />
                 <button type="submit" className="add-book-button">
                     Add Book
                 </button>

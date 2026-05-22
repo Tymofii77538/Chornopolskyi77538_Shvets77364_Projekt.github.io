@@ -1,6 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "../api/axios";
+import "../styles/EditBook.css";
+import FormField from "../components/FormField";
 
 function EditBook() {
     const { id } = useParams();
@@ -50,27 +52,24 @@ function EditBook() {
         <div className="edit-book-container">
             <h2>Edit Book</h2>
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="title">Title:</label>
-                    <input
-                        type="text"
-                        id="title"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="description">Description:</label>
-                    <textarea
-                        id="description"
-                        value={description}
-                        onChange={(e) => setDescription(e.target.value)}
-                    />
-                </div>
+                <FormField
+                    label="Title"
+                    type="text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    required
+                />
+                <FormField
+                    label="Description"
+                    type="textarea"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                />
                 <div className="form-group">
                     <label htmlFor="author">Author:</label>
                     <select
                         id="author"
+                        className="select-field"
                         value={authorId}
                         onChange={(e) => setAuthorId(e.target.value)}
                     >
@@ -82,7 +81,9 @@ function EditBook() {
                         ))}
                     </select>
                 </div>
-                <button type="submit">Update Book</button>
+                <button type="submit" className="edit-book-button">
+                    Update Book
+                </button>
             </form>
         </div>
     );

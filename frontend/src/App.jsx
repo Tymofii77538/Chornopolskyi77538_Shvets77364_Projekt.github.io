@@ -6,11 +6,13 @@ import AddBook from './pages/AddBook'
 import AuthorList from './pages/AuthorList'
 import AuthorDetail from './pages/AuthorDetail'
 import EditBook from './pages/EditBook'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<BookList />} />
         <Route path="/books/:id" element={<BookDetail />} />

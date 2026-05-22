@@ -48,3 +48,19 @@
 .delete-book-button:hover {
     background: #d32f2f;
 }
+
+.edit-book-button {
+    max-width: 96px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    background: #2196f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-book-button:hover {
+    background: #1976d2;
+}

@@ -1,11 +1,14 @@
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "../api/axios";
 import "../styles/BookDetail.css";
+import Reviews from "../components/Reviews";
 
 function BookDetail() {
     const { id } = useParams();
     const [book, setBook] = useState(null);
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         axios.get(`/books/${id}/`)
@@ -17,9 +20,12 @@ function BookDetail() {
             });
     }, [id]);
 
+
     if (!book) {
         return <div>Loading...</div>;
     }
+
+
 
     return (
         <div className="book-detail-container">
@@ -47,7 +53,9 @@ function BookDetail() {
             <Link to="/" className="back-to-book-list">
                 Back to Book List
             </Link>
-
+            <div>
+                <Reviews id={id} />
+            </div>
         </div>
     )
 }
